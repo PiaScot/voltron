@@ -56,7 +56,8 @@ check_install()
 
 requirements = [
     'scruffington>=0.3.6',
-    'flask',
+    'flask==2.0.0',
+    'werkzeug==2.0.0',
     'flask_restful',
     'blessed',
     'pygments',

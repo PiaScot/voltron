@@ -110,8 +110,9 @@ function install_apt {
         fi
         if echo $PYVER|grep "3\."; then
             sudo apt-get -y install libreadline6-dev python3-dev python3-setuptools python3-yaml python3-pip
-        else
-            sudo apt-get -y install libreadline6-dev python-dev python-setuptools python-yaml python-pip
+        # no use python2 no longer
+        # else
+        #     sudo apt-get -y install libreadline6-dev python-dev python-setuptools python-yaml python-pip
         fi
     fi
 }
@@ -134,8 +135,9 @@ function install_yum {
 
         if echo $PYVER|grep "3\."; then
             sudo $CMD $PARAMS install readline-devel python3-devel python3-setuptools python3-yaml python3-pip
-        else
-            sudo $CMD $PARAMS install readline-devel python-devel python-setuptools python-yaml python-pip
+        # no use python2 no longer
+        # else
+        #     sudo $CMD $PARAMS install readline-devel python-devel python-setuptools python-yaml python-pip
         fi
     fi
 }
